@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Stock Simulator </title>
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.stock.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Instructions</h2>
+        <h4 style="text-align: center;">Use the chart to watch the price of the stock, when ready, click the button to buy the stock, provided you have the funds that is. When you wish to,  you can sell your shares one at a time. </h4>
+        <div style="text-align: center;">
+            <a href="https://github.com/epicsledge0510/Stock-Simulator" style="background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Documentation</a>  
+        </div>
+        <section id=projGrid>
+            <div id="stockChartContainer" style="height: 450px; width: 50%; padding-left: 12.5%; padding-right: 12.5%;">
+            </div>
+        </section>
+        <button id="addDataPoint" style="margin-left: 10%;
+        background-color: #99a0c5;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Add Data Point</button>  
+        <button id="updateDataPoint" style="margin-left: 10%;
+        background-color: #99a0c5;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Update Last Data Point</button>
+        <button id="buyButton" style="margin-left: 10%;
+        background-color: #99a0c5;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Buy Stock at Current Price</button>
+        <button id="sellButton" style="margin-left: 10%;
+        background-color: #99a0c5;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Sell Stock at Current Price</button>
+        <button id="jumpButton" style="margin-left: 10%;
+        background-color: #99a0c5;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Jump forward a month</button>
+        <div style="
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(4, 275px);
+        overflow: visible;">
+            <h2 style="margin-left: 25%"    >Current Money</h2>
+            <h3 id="playerOwnedMoney" style="margin-left: 25%"></h3>
+            <h2 style="margin-left: 25%">Current Stocks</h2>
+            <h3 id="playerOwnedStocks" style="margin-left: 25%"></h3>
+            <h2 id="boughtStockList"></h2>
+            <h2 id="profit"></h2>
+            <h2 id="totalProfit"></h2>
+        </div>
+        <div style="
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(4, 300px);
+        overflow: visible;">
+            <h2 id="boughtStockList"></h2>
+            <h2 id="profit"></h2>
+            <h2 id="totalProfit"></h2>
+        </div>
+    </body>
+</html>
